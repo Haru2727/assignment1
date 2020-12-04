@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me:Arash Saeedi</title>
+<style>
+
+h1 {
+    color:darkblue;
+    border: 1px solid deepskyblue;
+    padding: 20px;
+    text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other.  Found this on W3 schools.com   */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns I understand the div class labeling below which seperates each section for this example
+but what I cant fully understand is why the row class is for all of the div section and it only used the first column in this */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+</style>
+</head>
+
+<body>
+
+
+<h1>About Me</h1>
+            <div class = "row">
+        <div class = "column" style ="background-color:lightgrey;">
+<h2>Arash Saeedi</h2>
+<img src = https://latitudelegal.com/wp-content/uploads/2019/04/Atlanta-georgia.png width=200 height=200 />
+    </div>
+    <div class = "column" style = "background-color: grey;">
+<h2>About Me</h2>
+<p>My name is Arash Saeedi.  I am originally from New Jersey and now reside in Atlanta, Ga. <br>
+      Been here since 1999 so I consider myself from Atlanta now.</p>
+    </div>
+<div class = "column" style = "background-color: dimgray;">
+<h2>Contact Info</h2>
+
+<ul>
+    <li>Email <a href ="mailto:saeediarash84@gmail.com"target ="_blank">Send Email</a></li>
+    <li>GitHub <a href = "https://github.com/Haru2727?tab=repositories"target = "_blank">Haru2727</a></li>
+    <li>Portfolio <a href ="https://demo.wponepager.com/coming-soon-16/" target = "_blank">Coming Soon</a></li>
+
+
+</ul>
+    </div>
+            </div>
+
+</body>
+
+</html>
