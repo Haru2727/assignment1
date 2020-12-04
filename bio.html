@@ -3,14 +3,24 @@
 <head>
     <title>About Me:Arash Saeedi</title>
 <style>
+html{
+  background-color:gold;
+}
 
+head{
+  background-color: #333333;
+}
 h1 {
-    color:darkblue;
-    border: 1px solid deepskyblue;
+    color:blue;
+    font-size: 28px;
+    border: 1px solid dodgerblue;
     padding: 20px;
     text-align: center;
 }
-
+body {
+  margin: 0;
+  padding: 0;
+}
 
 * {
   box-sizing: border-box;
@@ -21,11 +31,14 @@ h1 {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px; /* I previously had it under text-align but that didnt look good on the firsdt try.
+  went to W3 and found these examples to work with.  The float makes better sense than text-align for sure I just will
+  have to practice more to understand the numbers. */
 }
 
 /* Clear floats after the columns I understand the div class labeling below which seperates each section for this example
-but what I cant fully understand is why the row class is for all of the div section and it only used the first column in this */
+but what I cant fully understand is why the row class is for all of the div section and it only used the first column in this
+I beleive it is because it says row:after command. */
 .row:after {
   content: "";
   display: table;
@@ -35,26 +48,25 @@ but what I cant fully understand is why the row class is for all of the div sect
 
 <body>
 
-
 <h1>About Me</h1>
             <div class = "row">
-        <div class = "column" style ="background-color:lightgrey;">
+        <div class = "column" style = "background-color:dodgerblue;">
 <h2>Arash Saeedi</h2>
 <img src = https://latitudelegal.com/wp-content/uploads/2019/04/Atlanta-georgia.png width=200 height=200 />
     </div>
-    <div class = "column" style = "background-color: grey;">
+    <div class = "column" style = "background-color:dodgerblue;">
 <h2>About Me</h2>
 <p>My name is Arash Saeedi.  I am originally from New Jersey and now reside in Atlanta, Ga. <br>
       Been here since 1999 so I consider myself from Atlanta now.</p>
     </div>
-<div class = "column" style = "background-color: dimgray;">
+<div class = "column" style = "background-color: dodgerblue;">
 <h2>Contact Info</h2>
 
 <ul>
     <li>Email <a href ="mailto:saeediarash84@gmail.com"target ="_blank">Send Email</a></li>
-    <li>GitHub <a href = "https://github.com/Haru2727?tab=repositories"target = "_blank">Haru2727</a></li>
-    <li>Portfolio <a href ="https://demo.wponepager.com/coming-soon-16/" target = "_blank">Coming Soon</a></li>
-
+    <li>GitHub <strong>  <a href = "https://github.com/Haru2727?tab=repositories">Haru2727</a></li></strong>
+    <li>Portfolio <a href ="https://demo.wponepager.com/coming-soon-16/" >Coming Soon</a></li>
+    <li>PlaceHolder <a href= "#" >PlaceHolder</a></li>
 
 </ul>
     </div>
